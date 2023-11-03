@@ -8,7 +8,7 @@ function App() {
     <main className='container'>
       <Logo className="logo" src={logo} alt="Logo da calculadora de gasolina" />
 
-      <h1 className='tutle'>Qual é a melhor opção?</h1>
+      <h1 className='title'>Qual é a melhor opção?</h1>
 
       <Formulario />
     </main>
