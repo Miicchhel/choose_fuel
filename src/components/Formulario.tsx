@@ -1,15 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from "react"
-
-interface InputsProps {
-    gasolina: number;
-    etanol: number;
-}
-
-interface InfoProps {
-        title: string, 
-        infoGasolina: number,
-        infoEtanol: number
-    }
+import Mensagem from "./Mensagem"
+import { InfoProps, InputsProps } from "../interfaces/interfaces"
 
 export default function Formulario() {
     const [inputs, setInputs] = useState<InputsProps>({gasolina: 0, etanol: 0})
@@ -76,6 +67,7 @@ export default function Formulario() {
                 <button type="submit">Calcular</button>
             </form>
 
+            <Mensagem info={info}/>
         </>
     )
 }
